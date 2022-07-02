@@ -1,7 +1,8 @@
 <template>
+  <h1>Flags of Europe</h1>
   <div class="grid">
     <div v-for="country in countries">
-      <img class="flag" :src="`/img/${country.id}.svg`" alt="">
+      <img class="country-flag" :src="`/img/${country.id}.svg`" alt="">
       <h2 class="country-title">{{ country.id }}</h2>
       <p class="country-name">{{ country.name }}</p>
       <p class="country-type">{{ country.type }}</p>
@@ -34,8 +35,11 @@ export default {
 
 
 body {
-  background: #f0ece6;
   font-family: "Test Geograph";
+}
+
+h1 {
+  font-size: 5em;
 }
 
 .grid {
@@ -50,9 +54,10 @@ body {
   text-transform: uppercase;
 }
 
-/* .country-name {
-  opacity: .5
-} */
+.country-flag {
+  background: rgb(47, 47, 50);
+  padding: .15em;
+}
 
 .country-type {
   font-size: .75em;
