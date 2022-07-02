@@ -21,6 +21,18 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Test Geograph";
+  src: url("/font/test-geograph-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test Geograph";
+  src: url("/font/test-geograph-bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+
 body {
   background: #f0ece6;
   font-family: "Test Geograph";
