@@ -36,6 +36,7 @@ export default {
 
 body {
   font-family: "Test Geograph";
+  font-size: .96vw;
 }
 
 h1 {
@@ -60,7 +61,7 @@ h1 {
 }
 
 .country-type {
-  font-size: .75em;
+  font-size: .85em;
   margin-top: .3em;
   opacity: .5
 }
